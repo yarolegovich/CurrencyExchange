@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">USD Exchange Rates</string>
+    <string name="label_day_high">Day high</string>
+    <string name="label_day_low">Day low</string>
+    <string name="label_market_closed">Market closed</string>
+
+    <string name="dialog_date_title">Choose date</string>
+    <string name="dialog_loading_title">Loading data…</string>
+</resources>

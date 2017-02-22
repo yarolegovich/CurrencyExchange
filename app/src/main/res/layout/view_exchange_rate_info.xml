@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<GridLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:columnCount="3"
+    android:orientation="vertical"
+    android:paddingBottom="12dp"
+    android:rowCount="2"
+    tools:showIn="@layout/activity_main">
+
+    <LinearLayout
+        android:id="@+id/container_closed_info"
+        android:layout_columnSpan="2"
+        android:layout_gravity="center"
+        android:layout_rowSpan="2"
+        android:gravity="center_vertical"
+        android:orientation="vertical"
+        android:paddingBottom="16dp"
+        android:paddingLeft="@dimen/margin_left"
+        android:paddingStart="@dimen/margin_left"
+        android:paddingTop="16dp">
+
+        <TextView
+            android:id="@+id/label_market_closed"
+            style="@style/ExchangeRateInfoLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_market_closed" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="4dp" />
+
+        <TextView
+            android:id="@+id/rate_closed"
+            style="@style/ExchangeRateInfoLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:gravity="center_vertical"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="28sp"
+            tools:drawableEnd="@drawable/ic_arrow_drop_down_white_18dp"
+            tools:drawableRight="@drawable/ic_arrow_drop_down_white_18dp"
+            tools:text="62.242" />
+
+        <Space
+            android:layout_width="0dp"
+            android:layout_height="4dp" />
+
+        <TextView
+            android:id="@+id/rate_closed_diff"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="@color/materialGreen"
+            tools:text="+0.435" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_column="2"
+        android:layout_gravity="center"
+        android:layout_row="0"
+        android:orientation="vertical"
+        android:paddingTop="38dp">
+
+        <TextView
+            style="@style/ExchangeRateInfoLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_day_low" />
+
+        <TextView
+            android:id="@+id/rate_low"
+            style="@style/ExchangeRateInfoLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="20sp"
+            tools:text="62.242" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_column="2"
+        android:layout_gravity="center"
+        android:layout_row="1"
+        android:orientation="vertical">
+
+        <TextView
+            style="@style/ExchangeRateInfoLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/label_day_high" />
+
+        <TextView
+            android:id="@+id/rate_high"
+            style="@style/ExchangeRateInfoLabel"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="sans-serif-light"
+            android:textColor="?android:textColorPrimary"
+            android:textSize="20sp"
+            tools:text="62.242" />
+    </LinearLayout>
+
+
+</GridLayout>

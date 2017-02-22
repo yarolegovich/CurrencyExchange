@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.yarolegovich.currencyexchange.MainActivity">
+
+    <include layout="@layout/toolbar" />
+
+    <com.github.mikephil.charting.charts.LineChart
+        android:id="@+id/chart_rates"
+        android:layout_width="match_parent"
+        android:layout_height="220dp" />
+
+    <com.yarolegovich.currencyexchange.view.DateRangePicker
+        android:id="@+id/picker_date_range"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        android:drawableLeft="@drawable/ic_date_range_white_24dp"
+        android:drawableStart="@drawable/ic_date_range_white_24dp"
+        android:drawablePadding="8dp"
+        android:layout_gravity="start|center_vertical"
+        android:layout_marginLeft="@dimen/margin_left"
+        android:layout_marginRight="@dimen/margin_left"
+        android:textColor="?android:textColorPrimary" />
+
+    <include
+        layout="@layout/view_exchange_rate_info"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" />
+
+    <com.yarolegovich.currencyexchange.view.CurrencyPicker
+        android:id="@+id/picker_currency"
+        android:layout_width="match_parent"
+        android:layout_height="54dp" />
+
+</LinearLayout>
